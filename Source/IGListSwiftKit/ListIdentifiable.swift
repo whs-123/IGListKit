@@ -49,7 +49,7 @@ public extension Sequence where Element: ListIdentifiable {
 /// An internal class for boxing Swift values, for use with the `ListValueSectionController` class.
 ///
 /// The public boxing API is provided by a protocol extension of `ListIdentifiable`.
-private final class ListDiffableValueBox<Value: ListIdentifiable>: NSObject, ListDiffable {
+public final class ListDiffableValueBox<Value: ListIdentifiable>: NSObject, ListDiffable {
     let value: Value
 
     init(value: Value) {
